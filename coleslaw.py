@@ -1,9 +1,9 @@
 import csArguments
-import csVariables
-import csStrings
-import csFunctional
-import csMiscellaneous
-import csTime
+# import csVariables
+# import csStrings
+# import csFunctional
+# import csTime
+# import csMiscellaneous
 
 class ColeSlaw:
   csVERSION = '0.5-ColeSlaw.a1'
