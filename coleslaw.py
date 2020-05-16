@@ -1,4 +1,4 @@
-import csArguments
+from csArguments import *
 # import csVariables
 # import csStrings
 # import csFunctional
