@@ -20,6 +20,6 @@ def arg(splitargs=None, word="", args=None):
         splitargs = len(args.split())
 
         try:
-            return splitargs[int(word[0]) % len(splitargs)]
+            return splitargs[chr(int(word[0])) % len(splitargs)]
         except:
             return ""
