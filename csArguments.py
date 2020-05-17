@@ -12,14 +12,17 @@ def argslen(args=None):
     return str(splitargs)
 
 # gets the argument at the given index, split by whitespace
-def arg(splitargs=None, word="", args=None):
+def arg(splitargs=None, numb=0, args=None):
     if splitargs is None:
         if args is None:
             args = ""
 
         splitargs = len(args.split())
 
-        try:
-            return splitargs[chr(int(word[0])) % len(splitargs)]
-        except:
-            return ""
+    if numb > splitargs:
+        numb = 0
+
+    try:
+        return args.split()[numb]
+    except:
+        return "Exception"
