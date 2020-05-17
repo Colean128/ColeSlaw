@@ -11,7 +11,15 @@ def argslen(args=None):
 
     return str(splitargs)
 
-    # gets the argument at the given index, split by whitespace
-def arg(splitargs=None, args=None):
-    # Stubbed
-    return ""
+# gets the argument at the given index, split by whitespace
+def arg(splitargs=None, word="", args=None):
+    if splitargs is None:
+        if args is None:
+            args = ""
+
+        splitargs = len(args.split())
+
+        try:
+            return splitargs[int(word[0]) % len(splitargs)]
+        except:
+            return ""
